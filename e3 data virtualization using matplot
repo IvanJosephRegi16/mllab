@@ -1,0 +1,16 @@
+Experiment No.: 3
+
+Aim: Program to perform data visualisation using the python library matplotlib.
+
+CO1: Use different python packages to perform numerical calculations, statistical computations 
+and data visualization.
+
+Procedure:
+import matplotlib.pyplot as plt
+categories=["a","b","c","d"]
+values=[1,2,3,4]
+plt.bar(categories,values,color='skyblue')
+plt.xlabel(categories)
+plt.ylabel(values)
+plt.title("barchart")
+plt.show()
