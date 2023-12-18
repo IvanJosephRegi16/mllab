@@ -1,0 +1,23 @@
+Experiment No.: 2
+
+Aim: Program to perform single value decomposition(SVD) using python Numpy.
+
+CO1: Use different python packages to perform numerical calculations, statistical computations 
+and data visualization
+
+Procedure:
+
+import numpy as np
+matrix = np.array([[5, 6, 4],
+ [2, 5, 6],
+ [3, 5, 6]])
+U, S, VT = np.linalg.svd(matrix)
+print("Matrix U: ")
+print(U)
+print("Matrix S: ")
+print(np.diag(S))
+print("Matrix VT: ")
+print(VT)
+recnstrct = np.dot(U,np.dot(np.diag(S),VT))
+print("Old Matrix: ")
+print(recnstrct)
